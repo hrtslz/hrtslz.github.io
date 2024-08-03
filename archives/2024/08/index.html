@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://hrtslz.github.io/archives/2024/07/"/>
+  <link rel="canonical" href="http://hrtslz.github.io/archives/2024/08/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,12 +33,12 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Archive: 2024/7 - Hexo</title>
+  <title>Archive: 2024/8 - Hexo</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="Hexo - John Doe - Hexo">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://hrtslz.github.io/archives/2024/07/index.html">
+<meta property="og:url" content="http://hrtslz.github.io/archives/2024/08/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -2520,10 +2520,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
-          
-        
-          
-        
       
     
     
@@ -2531,7 +2527,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://hrtslz.github.io/2024/07/30/使用ThreadLocal获取当前用户ID/">
+  <link itemprop="mainEntityOfPage" href="http://hrtslz.github.io/2024/08/03/MyBatisPlus的分页插件使用/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Hexo">
   </span>
@@ -2549,28 +2545,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/07/30/%E4%BD%BF%E7%94%A8ThreadLocal%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E7%94%A8%E6%88%B7ID/"  itemprop="url">
-        使用ThreadLocal获取当前用户ID
+      <a href="/2024/08/03/MyBatisPlus%E7%9A%84%E5%88%86%E9%A1%B5%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/"  itemprop="url">
+        MyBatisPlus的分页插件使用
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        过程：利用网关在解析token时拿到当前用户的ID，再将用户ID放入请求头，拦截器拦截请求后从请求头中取出用户ID，最后将用户ID放入本地线程方便后续操作使用。
-具体步骤解析token拿到用户ID，放入请求头并重置请求
+        MyBatisPlus分页插件Page的使用过程
+新建对象1IPage page = new Page(dto.getPage(), dto.getSize());
 
-
-新建本地线程的工具类
-
-
-拦截器取出ID后放入本地线程（拦截完毕需清理线程）
-
-
-注册拦截器
-
-（图中少加了@Configuration）
-
+将前端输送过来的页码跟每页大小填入，如果没有自行设置默认值
+构造分页条件1LambdaQueryWrapper&lt;?&gt; lambdaQueryWrapper = new LambdaQueryWrapper&lt;?...
       
     
   </div>
@@ -2578,124 +2565,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-07-30T20:50:04+08:00">2024-07-30</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-08-03T15:41:17+08:00">2024-08-03</time>
         
       </div>
       
         <div>
-          <a class='readmore' href='/2024/07/30/%E4%BD%BF%E7%94%A8ThreadLocal%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E7%94%A8%E6%88%B7ID/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://hrtslz.github.io/2024/07/26/创建个人博客/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Hexo">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Hexo">
-    <meta itemprop="description" content="">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/07/26/%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"  itemprop="url">
-        创建个人博客
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        创建了Hexo个人博客，并部署到本地使用Volantis修改了博客的主题风格，后续可继续改进以后就在博客中发表学习记录时长 2h
-
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-07-26T01:22:11+08:00">2024-07-26</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/07/26/%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://hrtslz.github.io/2024/07/25/hello-world/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Hexo">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Hexo">
-    <meta itemprop="description" content="">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/07/25/hello-world/"  itemprop="url">
-        Hello World
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-07-25T21:18:23+08:00">2024-07-25</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/07/25/hello-world/' itemprop="url">
+          <a class='readmore' href='/2024/08/03/MyBatisPlus%E7%9A%84%E5%88%86%E9%A1%B5%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/' itemprop="url">
             Read More
           </a>
         </div>
@@ -3377,7 +3252,7 @@ Qu...
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://hrtslz.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://hrtslz.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://hrtslz.github.io/","name":"Hexo"}},{"@type":"ListItem","position":2,"item":{"@id":"http://hrtslz.github.io/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"http://hrtslz.github.io/archives/2024/","name":"2024"}},{"@type":"ListItem","position":4,"item":{"@id":"http://hrtslz.github.io/archives/2024/7/","name":"7"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://hrtslz.github.io/","keywords":null,"description":"","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://hrtslz.github.io/","description":""},"publisher":{"@type":"Organization","name":"Hexo","url":"http://hrtslz.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://hrtslz.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://hrtslz.github.io/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://hrtslz.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://hrtslz.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://hrtslz.github.io/","name":"Hexo"}},{"@type":"ListItem","position":2,"item":{"@id":"http://hrtslz.github.io/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"http://hrtslz.github.io/archives/2024/","name":"2024"}},{"@type":"ListItem","position":4,"item":{"@id":"http://hrtslz.github.io/archives/2024/8/","name":"8"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://hrtslz.github.io/","keywords":null,"description":"","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://hrtslz.github.io/","description":""},"publisher":{"@type":"Organization","name":"Hexo","url":"http://hrtslz.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://hrtslz.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://hrtslz.github.io/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
