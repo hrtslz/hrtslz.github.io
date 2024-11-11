@@ -41,11 +41,11 @@
 <meta property="og:title" content="Bean注入">
 <meta property="og:url" content="http://hrtslz.github.io/2024/11/11/Bean%E6%B3%A8%E5%85%A5/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="在配置类中注册第三方Bean@Bean   1231.对象名默认为方法名（在@Bean中修改名字）2.如果方法的内部需要使用到ioc容器中已经存在的bean对象，只需要在方法的形参上声明即可，spring会自动注入3.配置类须在启动类的所在包及其子包才可被扫描  @Import   1231.Import可导入普通类或者配置类2.需要导入注册多个类时，使用ImportSelector接口（并在启动">
+<meta property="og:description" content="在配置类中注册第三方Bean@Bean  ![](https:&#x2F;&#x2F;gitee.com&#x2F;hrtslz&#x2F;typora&#x2F;raw&#x2F;master&#x2F;img&#x2F;屏幕截图 2024-09-04 083822.png) 1231.对象名默认为方法名（在@Bean中修改名字）2.如果方法的内部需要使用到ioc容器中已经存在的bean对象，只需要在方法的形参上声明即可，spring会自动注入3.配置类须在启动类的所在包及">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2024-11-11T04:11:28.000Z">
-<meta property="article:modified_time" content="2024-11-11T04:24:29.346Z">
+<meta property="article:modified_time" content="2024-11-11T04:56:27.053Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
@@ -1745,7 +1745,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1731299256937),
+    lastupdate: new Date(1731300994799),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2597,8 +2597,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
     <h3 id="在配置类中注册第三方Bean"><a href="#在配置类中注册第三方Bean" class="headerlink" title="在配置类中注册第三方Bean"></a>在配置类中注册第三方Bean</h3><p>@Bean</p>
-<img src = "https://gitee.com/hrtslz/typora/raw/master/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-09-04%20083822.png">
-
+<p><img src="D:\BlogFile\source\image\333.png" class="lazyload" data-srcset="D:\BlogFile\source\image\333.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="333"></p>
+<p>![](<a target="_blank" rel="noopener" href="https://gitee.com/hrtslz/typora/raw/master/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE">https://gitee.com/hrtslz/typora/raw/master/img/屏幕截图</a> 2024-09-04 083822.png)</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.对象名默认为方法名（在@Bean中修改名字）</span><br><span class="line">2.如果方法的内部需要使用到ioc容器中已经存在的bean对象，只需要在方法的形参上声明即可，spring会自动注入</span><br><span class="line">3.配置类须在启动类的所在包及其子包才可被扫描</span><br></pre></td></tr></table></figure>
 
 <p>@Import</p>
@@ -2635,7 +2635,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-11-11T12:24:29+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-11-11T12:56:27+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：Nov 11, 2024</p>
@@ -2727,9 +2727,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         </a>
       
       
-        <a class='next' href='/2024/11/11/seata%E9%83%A8%E7%BD%B2/'>
-          <p class='title'>seata部署<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>docker部署docker run –name seata -p 8099:8099 -p 51809:51809 -e SEATA_IP&#x3D;192.168.200.130 -v &#...</p>
+        <a class='next' href='/2024/11/11/%E4%BD%BF%E7%94%A8ThreadLocal%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E7%94%A8%E6%88%B7ID/'>
+          <p class='title'>使用ThreadLocal获取当前用户ID<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>过程：利用网关在解析token时拿到当前用户的ID，再将用户ID放入请求头，拦截器拦截请求后从请求头中取出用户ID，最后将用户ID放入本地线程方便后续操作使用。
+具体步骤解析token拿到用户I...</p>
         </a>
       
     </div>
@@ -3357,7 +3358,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://hrtslz.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://hrtslz.github.io/","sameAs":["https://github.com/volantis-x"],"description":"这是一个包含技术文章的博客，涵盖了如Java编程相关的内容"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://hrtslz.github.io/","name":"Hexo"}},{"@type":"ListItem","position":2,"item":{"@id":"http://hrtslz.github.io/categories/Spring/","name":"Spring"}},{"@type":"ListItem","position":3,"item":{"@id":"http://hrtslz.github.io/2024/11/11/Bean注入/","name":"Bean注入"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://hrtslz.github.io/","keywords":null,"description":"这是一个包含技术文章的博客，涵盖了如Java编程相关的内容","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://hrtslz.github.io/","description":"这是一个包含技术文章的博客，涵盖了如Java编程相关的内容"},"publisher":{"@type":"Organization","name":"Hexo","url":"http://hrtslz.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://hrtslz.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Bean注入","description":"这是一个包含技术文章的博客，涵盖了如Java编程相关的内容","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://hrtslz.github.io/2024/11/11/Bean%E6%B3%A8%E5%85%A5/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://hrtslz.github.io/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://hrtslz.github.io/2024/11/11/Bean%E6%B3%A8%E5%85%A5/","wordCount":0,"datePublished":"2024-11-11T04:11:28.000Z","dateModified":"2024-11-11T04:24:29.346Z","articleSection":"Spring","keywords":"java","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://hrtslz.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://hrtslz.github.io/","sameAs":["https://github.com/volantis-x"],"description":"这是一个包含技术文章的博客，涵盖了如Java编程相关的内容"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://hrtslz.github.io/","name":"Hexo"}},{"@type":"ListItem","position":2,"item":{"@id":"http://hrtslz.github.io/categories/Spring/","name":"Spring"}},{"@type":"ListItem","position":3,"item":{"@id":"http://hrtslz.github.io/2024/11/11/Bean注入/","name":"Bean注入"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://hrtslz.github.io/","keywords":null,"description":"这是一个包含技术文章的博客，涵盖了如Java编程相关的内容","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://hrtslz.github.io/","description":"这是一个包含技术文章的博客，涵盖了如Java编程相关的内容"},"publisher":{"@type":"Organization","name":"Hexo","url":"http://hrtslz.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://hrtslz.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Bean注入","description":"这是一个包含技术文章的博客，涵盖了如Java编程相关的内容","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://hrtslz.github.io/2024/11/11/Bean%E6%B3%A8%E5%85%A5/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://hrtslz.github.io/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://hrtslz.github.io/2024/11/11/Bean%E6%B3%A8%E5%85%A5/","wordCount":0,"datePublished":"2024-11-11T04:11:28.000Z","dateModified":"2024-11-11T04:56:27.053Z","articleSection":"Spring","keywords":"java","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
