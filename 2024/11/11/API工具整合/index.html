@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://hrtslz.github.io/2024/07/26/创建个人博客/"/>
+  <link rel="canonical" href="http://hrtslz.github.io/2024/11/11/api工具整合/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,21 +33,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>创建个人博客 - Hexo</title>
-  <meta name="keywords" content="Hexo,null">
+  <title>API工具整合 - Hexo</title>
+  <meta name="keywords" content="java,null">
   <meta desc name="description" content="这是一个包含技术文章的博客，涵盖了如Java编程相关的内容 - John Doe - Hexo">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="创建个人博客">
-<meta property="og:url" content="http://hrtslz.github.io/2024/07/26/%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:title" content="API工具整合">
+<meta property="og:url" content="http://hrtslz.github.io/2024/11/11/API%E5%B7%A5%E5%85%B7%E6%95%B4%E5%90%88/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="创建了Hexo个人博客，并部署到本地使用Volantis修改了博客的主题风格，后续可继续改进以后就在博客中发表学习记录时长 2h">
+<meta property="og:description" content="整理日常常用的小工具或技巧 对象属性拷贝1BeanUtil.copyProperties(source,new);  集合转字符串1StringUtils.join(List, &quot;,&quot;);  将List集合转为字符串并用“，”分隔 JSON转Map1List&lt;Map&gt; maps &#x3D; JSON.parseArray(XXXX, Map.class);  前端传过来的M">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2024-07-25T17:22:11.000Z">
-<meta property="article:modified_time" content="2024-07-25T17:35:34.993Z">
+<meta property="article:published_time" content="2024-11-11T04:11:28.000Z">
+<meta property="article:modified_time" content="2024-11-11T04:26:15.847Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2518,7 +2518,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://hrtslz.github.io/2024/07/26/创建个人博客/">
+  <link itemprop="mainEntityOfPage" href="http://hrtslz.github.io/2024/11/11/API工具整合/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Hexo">
   </span>
@@ -2539,7 +2539,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        创建个人博客
+        API工具整合
       </h1>
       <div class='new-meta-box'>
         
@@ -2556,14 +2556,24 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
             
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/Spring/">Spring</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/Spring/" itemprop="url"><span itemprop="name">Spring</span></a>
+      </span>
+    
+  </div>
+
 
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-07-26T01:22:11+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-11-11T12:11:28+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Jul 26, 2024</p>
+    <p>发布于：Nov 11, 2024</p>
   </a>
 </div>
 
@@ -2586,7 +2596,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>创建了Hexo个人博客，并部署到本地<br>使用Volantis修改了博客的主题风格，后续可继续改进<br>以后就在博客中发表学习记录<br>时长 2h</p>
+    <p>整理日常常用的小工具或技巧</p>
+<h3 id="对象属性拷贝"><a href="#对象属性拷贝" class="headerlink" title="对象属性拷贝"></a>对象属性拷贝</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">BeanUtil.copyProperties(<span class="built_in">source</span>,new);</span><br></pre></td></tr></table></figure>
+
+<h3 id="集合转字符串"><a href="#集合转字符串" class="headerlink" title="集合转字符串"></a>集合转字符串</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">StringUtils.<span class="built_in">join</span>(List, <span class="string">&quot;,&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<p>将List集合转为字符串并用“，”分隔</p>
+<h3 id="JSON转Map"><a href="#JSON转Map" class="headerlink" title="JSON转Map"></a>JSON转Map</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List&lt;Map&gt; maps = JSON.parseArray(XXXX, Map.class);</span><br></pre></td></tr></table></figure>
+
+<p>前端传过来的Map会变成String，需再转回Map</p>
 
   </div>
   
@@ -2611,10 +2629,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-07-26T01:35:34+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-11-11T12:26:15+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Jul 26, 2024</p>
+    <p>更新于：Nov 11, 2024</p>
   </a>
 </div>
 
@@ -2623,8 +2641,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Hexo/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Hexo</p></a></div>
-  <span hidden itemprop="keywords">Hexo</span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/java/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>java</p></a></div>
+  <span hidden itemprop="keywords">java</span>
 
 
         
@@ -2637,7 +2655,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://hrtslz.github.io/2024/07/26/%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/&title=创建个人博客 - Hexo&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://hrtslz.github.io/2024/11/11/API%E5%B7%A5%E5%85%B7%E6%95%B4%E5%90%88/&title=API工具整合 - Hexo&summary="
           
           >
           
@@ -2649,7 +2667,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://hrtslz.github.io/2024/07/26/%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/&title=创建个人博客 - Hexo&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://hrtslz.github.io/2024/11/11/API%E5%B7%A5%E5%85%B7%E6%95%B4%E5%90%88/&title=API工具整合 - Hexo&summary="
           
           >
           
@@ -2661,7 +2679,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://hrtslz.github.io/2024/07/26/%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/&title=创建个人博客 - Hexo&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://hrtslz.github.io/2024/11/11/API%E5%B7%A5%E5%85%B7%E6%95%B4%E5%90%88/&title=API工具整合 - Hexo&summary="
           
           >
           
@@ -2694,19 +2712,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2024/11/11/%E8%87%AA%E5%AE%9A%E4%B9%89starter/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>自定义starter</p>
-          <p class='content'>创建模块12-dmybatis-spring-boot-autoconfigure(用于实现自动配置)-dmybatis-spring-boot-starter(起步依赖)
+        <a class='prev' href='/2024/11/11/MyBatisPlus%E7%9A%84%E5%88%86%E9%A1%B5%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>MyBatisPlus的分页插件使用</p>
+          <p class='content'>MyBatisPlus分页插件Page的使用过程
+新建对象1IPage page = new Page(dto.getPage(), dto.getSize());
 
-引用依赖
-
-在自动...</p>
+将前端输送过来的页码跟每页...</p>
         </a>
       
       
-        <a class='next' href='/2024/07/25/hello-world/'>
-          <p class='title'>Hello World<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any ...</p>
+        <a class='next' href='/2024/11/11/Bean%E6%B3%A8%E5%85%A5/'>
+          <p class='title'>Bean注入<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>在配置类中注册第三方Bean@Bean
+
+
+1231.对象名默认为方法名（在@Bean中修改名字）2.如果方法的内部需要使用到ioc容器中已经存在的bean对象，只需要在方法的形参上声明即可，s...</p>
         </a>
       
     </div>
@@ -2722,7 +2742,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2024/07/26/%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2024/11/11/API%E5%B7%A5%E5%85%B7%E6%95%B4%E5%90%88/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2754,9 +2774,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
 
-  <div class="">
-    <!-- pjax占位 -->
-  </div>
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E6%8B%B7%E8%B4%9D"><span class="toc-text">对象属性拷贝</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%86%E5%90%88%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-text">集合转字符串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JSON%E8%BD%ACMap"><span class="toc-text">JSON转Map</span></a></li></ol>
+    </div>
+  </section>
 
   
 
@@ -3324,7 +3354,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://hrtslz.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://hrtslz.github.io/","sameAs":["https://github.com/volantis-x"],"description":"这是一个包含技术文章的博客，涵盖了如Java编程相关的内容"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://hrtslz.github.io/","name":"Hexo"}},{"@type":"ListItem","position":3,"item":{"@id":"http://hrtslz.github.io/2024/07/26/创建个人博客/","name":"创建个人博客"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://hrtslz.github.io/","keywords":null,"description":"这是一个包含技术文章的博客，涵盖了如Java编程相关的内容","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://hrtslz.github.io/","description":"这是一个包含技术文章的博客，涵盖了如Java编程相关的内容"},"publisher":{"@type":"Organization","name":"Hexo","url":"http://hrtslz.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://hrtslz.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"创建个人博客","description":"这是一个包含技术文章的博客，涵盖了如Java编程相关的内容","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://hrtslz.github.io/2024/07/26/%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://hrtslz.github.io/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://hrtslz.github.io/2024/07/26/%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/","wordCount":0,"datePublished":"2024-07-25T17:22:11.000Z","dateModified":"2024-07-25T17:35:34.993Z","keywords":"Hexo","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://hrtslz.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://hrtslz.github.io/","sameAs":["https://github.com/volantis-x"],"description":"这是一个包含技术文章的博客，涵盖了如Java编程相关的内容"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://hrtslz.github.io/","name":"Hexo"}},{"@type":"ListItem","position":2,"item":{"@id":"http://hrtslz.github.io/categories/Spring/","name":"Spring"}},{"@type":"ListItem","position":3,"item":{"@id":"http://hrtslz.github.io/2024/11/11/API工具整合/","name":"API工具整合"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://hrtslz.github.io/","keywords":null,"description":"这是一个包含技术文章的博客，涵盖了如Java编程相关的内容","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://hrtslz.github.io/","description":"这是一个包含技术文章的博客，涵盖了如Java编程相关的内容"},"publisher":{"@type":"Organization","name":"Hexo","url":"http://hrtslz.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://hrtslz.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"API工具整合","description":"这是一个包含技术文章的博客，涵盖了如Java编程相关的内容","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://hrtslz.github.io/2024/11/11/API%E5%B7%A5%E5%85%B7%E6%95%B4%E5%90%88/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://hrtslz.github.io/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://hrtslz.github.io/2024/11/11/API%E5%B7%A5%E5%85%B7%E6%95%B4%E5%90%88/","wordCount":0,"datePublished":"2024-11-11T04:11:28.000Z","dateModified":"2024-11-11T04:26:15.847Z","articleSection":"Spring","keywords":"java","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
